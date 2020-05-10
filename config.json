@@ -1,0 +1,35 @@
+{
+    "csv_file": "data/landmarks.csv",
+    "image_path": "data/images/",
+    "image_dim": 32,
+    "cnn": {
+        "checkpoint": "./checkpoints/cnn/",
+        "learning_rate": 1e-4,
+        "num_epochs": 40,
+        "batch_size": 128,
+        "num_classes": 5
+    },
+    "autoencoder": {
+        "checkpoint": "./checkpoints/autoencoder/",
+        "learning_rate": 1e-4,
+        "num_epochs": 20,
+        "batch_size": 128,
+        "naive_scale": 6,
+        "ae_repr_dim": 64,
+        "num_classes": 10,
+        "classifier": {
+            "checkpoint": "./checkpoints/autoencoder_classifier/",
+            "learning_rate": 1e-3,
+            "num_epochs": 40,
+            "batch_size": 128,
+            "num_classes": 5
+        }
+    },
+    "challenge": {
+        "checkpoint": "./checkpoints/challenge/",
+        "learning_rate": 1e-3,
+        "num_epochs": 20,
+        "batch_size": 128,
+        "num_classes": 5
+    }
+}
